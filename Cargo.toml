@@ -1,0 +1,15 @@
+[package]
+name = "memory-write-overlap"
+version = "0.1.0"
+authors = [""]
+edition = "2021"
+license = "Apache-2.0"
+
+[dev-dependencies]
+fuels = { version = "0.65.1", features = ["fuel-core-lib"] }
+tokio = { version = "1.21.0", features = ["rt", "macros"] }
+
+[[test]]
+harness = true
+name = "tests"
+path = "tests/harness.rs"
